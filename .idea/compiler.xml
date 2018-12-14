@@ -4,6 +4,7 @@
     <bytecodeTargetLevel>
       <module name="org.fontys.Library.main" target="1.8" />
       <module name="org.fontys.Library.test" target="1.8" />
+      <module name="org.tci.Library.integrationTest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
