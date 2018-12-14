@@ -27,7 +27,7 @@ Chapters can be used in a sorted collection
  }
  @Test
  public void verifySortedCollection(){
-
+  Assert.assertTrue("ss",true);
   when(chapter.hashCode()).thenReturn(Integer.parseInt(CHAPTER_NUMBER));
 
 
