@@ -32,7 +32,7 @@ sourceSets{
 
 task integrationTest(type:Test) {
     description "Runs the integration tests."
-    gorup "verification"
+    group "verification"
     testClassesDir = sourceSets.integrationTest.output.classesDir
     classpath = sourceSets.integrationTest.runtimeClasspath
     testResultsDir = file('$testResultDir/integration')
