@@ -3,6 +3,7 @@ import java.util.Objects;
 public abstract class Chapter implements Comparable<Chapter> {
     abstract String getName();
     abstract String getNumber();
+    int test = 0;
     @Override
     public int hashCode(){
         return Objects.hashCode(getNumber());
