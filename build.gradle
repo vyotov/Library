@@ -2,11 +2,9 @@ plugins {
     id 'java'
 }
 
-apply plugin : "jacoco"
-
+apply plugin : 'jacoco'
 group 'org.tci'
 version '1.0'
-
 sourceCompatibility = 1.8
 
 repositories {
@@ -14,17 +12,17 @@ repositories {
     jcenter()
 }
 
-buildScan {
-    termsOfServiceUrl = "https://gradle.com/terms-of-service"; termsOfServiceAgree = "yes" 
-}
-
 dependencies {
-
     testCompile group: 'junit', name: 'junit', version: '4.12'
-
     testImplementation 'org.mockito:mockito-core:2.7.22'
 }
 
+if (hasProperty('buildScan')) {
+    buildScan {
+        termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+        termsOfServiceAgree = 'yes'
+    }
+}
 //sourceSets{
 //    integrationTest {
 //        java.srcDir file('src/main/java')
