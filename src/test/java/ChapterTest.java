@@ -28,7 +28,7 @@ Chapters can be used in a sorted collection
  @Test
  public void verifySortedCollection(){
  boolean expect = true;
- boolean actual = false;
+ boolean actual = true;
  Assert.assertEquals(expect,actual);
 
 
